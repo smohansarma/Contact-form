@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <div class="container" onsubmit="return validateform()">
+        <h1>Contact me:</h1>
+        <table id="contactform">
+            <tr>
+                <td>Name:</td>
+                <td><input  id="name" type="text" required></td>
+            </tr>
+            <tr>
+            <td>Email:</td>
+            <td><input id="email" type="email" required></td>
+            </tr>
+            <tr>
+            <td>Phone no:</td>
+            <td><input type="tel" id="phone" pattern="[0-9]{10}"
+                title="Enter 10 digit phone number "></td>
+            </tr>
+            <tr>
+                <td>Message:</td>
+                <td><textarea  id="message" required minlength="10"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Submit</button></td>
+            </tr>
+          
+        </table>
+    </div>
+    </form>
+    <script src="script.js"></script>
+    
+</body>
+</html>
